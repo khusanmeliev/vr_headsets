@@ -1,861 +1,861 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
-:root {
-  --navbar-height: 70px;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+  :root {
+    --navbar-height: 70px;
+  }
 
-*,
-body {
-  margin: 0;
-  padding: 0;
-}
+  *,
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-.logo {
-  width: 90;
-  height: var(--navbar-height);
-  background-color: white;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 2px rgb(142, 157, 165);
-  padding-left: 60px;
-}
-.logo p {
-  font-family: "Russo One", sans-serif;
-  font-size: 26px;
-  color: rgb(155, 152, 152);
-}
-/*--------------------------- HOME-PAGE ---------------------------*/
-.home_page {
-  width: 100%;
-  height: calc(100vh - var(--navbar-height));
-  /* background-color: rgb(255, 255, 255); */
-  display: flex;
-}
-.home_page .left {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home_page .left .box {
-  width: 80%;
-  height: 80%;
-}
-.home_page .left .box .title {
-  color: rgba(39, 142, 173, 0.856);
-  height: 20%;
-  display: flex;
-  align-items: center;
-  font-family: "Vollkorn", serif;
-  letter-spacing: 2px;
-}
-.home_page .left .box .text {
-  color: rgba(73, 77, 82, 0.753);
-  height: 60%;
-  display: flex;
-  font-size: 22px;
-  align-items: center;
-  font-family: "Vollkorn", serif;
-}
-.home_page .left .box .btn {
-  height: 20%;
-  display: flex;
-  align-items: center;
-}
-.home_page .left .box .btn button {
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "Vollkorn", serif;
-  color: white;
-  background-color: rgba(39, 142, 173, 0.856);
-  border: none;
-  border-radius: 5px;
-}
-.home_page .left .box .btn button:hover {
-  color: rgba(39, 142, 173, 0.856);
-  background-color: white;
-  border: 1px solid rgb(166, 166, 167);
-  transition: 0.3s;
-}
-
-.home_page .right {
-  width: 60%;
-  background-image: url("https://i.guim.co.uk/img/media/26560f541846d38e77d5a201ae4a938d8dff0139/0_1381_4480_2686/master/4480.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=9734c5d04efa6972be9f8baf983dbb69");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
-  z-index: -1;
-}
-
-/*------------------------- ABOUT-PAGE --------------------------*/
-.about_page {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(39, 142, 173, 0.856);
-  display: flex;
-  flex-direction: column;
-}
-.about_page .texts {
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  color: white;
-  font-family: "Vollkorn", serif;
-}
-
-.about_page .texts h1 {
-  font-size: 40px;
-  padding-top: 10px;
-}
-.about_page .texts p {
-  font-size: 20px;
-}
-
-.about_page .contents {
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.about_page .contents .box {
-  width: 30%;
-  height: 80%;
-  font-family: "Vollkorn", serif;
-  letter-spacing: 2px;
-}
-.about_page .contents .box .title {
-  background-color: white;
-  font-size: 26px;
-  font-weight: 700;
-  height: 20%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(39, 142, 173, 0.856);
-}
-.about_page .contents .box .text {
-  background-color: white;
-  font-size: 20px;
-  font-weight: 700;
-  height: 60%;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(8, 32, 39, 0.795);
-}
-.about_page .contents .box .btn {
-  background-color: white;
-  height: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about_page .contents .box .btn button {
-  width: 100px;
-  height: 40px;
-  border: 2px solid rgba(39, 142, 173, 0.856);
-  cursor: pointer;
-  background-color: white;
-  font-family: "Russo One", sans-serif;
-}
-.about_page .contents .box .btn button:hover {
-  border: 2px solid rgb(148, 146, 146);
-  transition: 0.1s;
-}
-
-/*---------------------------- TECHNOLOGY PAGE ------------------------*/
-.technology_page {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-.technology_page .left {
-  width: 40%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.technology_page .left img {
-  width: 85%;
-  height: 100vh;
-  opacity: 0.6;
-  display: flex;
-}
-.technology_page .right {
-  width: 60%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-.technology_page .right .top {
-  width: 95%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 2px;
-  box-shadow: 0px 1px 0px black;
-}
-.technology_page .right .top .title h1 {
-  color: rgba(39, 142, 173, 0.856);
-  font-size: 20px;
-  padding-top: 20px;
-  font-family: "Vollkorn", serif;
-}
-.technology_page .right .top .title2 h1 {
-  font-size: 60px;
-  padding-top: 15px;
-  font-family: "Vollkorn", serif;
-}
-.technology_page .right .top .text p {
-  font-size: 17px;
-  width: 60%;
-  padding-top: 10px;
-  font-family: "Vollkorn", serif;
-}
-
-.technology_page .right .bottom {
-  width: 95%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.technology_page .right .bottom .lamp {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-}
-.technology_page .right .bottom .lamp img {
-  width: 70px;
-  height: 60px;
-  border-radius: 50%;
-  color: rgb(119, 117, 117);
-}
-.technology_page .right .bottom .lamp p {
-  width: 35%;
-  font-size: 18px;
-  padding-left: 20px;
-  font-family: "Vollkorn", serif;
-}
-
-.technology_page .right .bottom .mike {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-}
-.technology_page .right .bottom .mike img {
-  width: 70px;
-  height: 50px;
-  border-radius: 50%;
-}
-.technology_page .right .bottom .mike p {
-  width: 35%;
-  font-size: 18px;
-  padding-left: 20px;
-  font-family: "Vollkorn", serif;
-}
-/* ------------------------------------------- TEXTS PAGE ---------------------------------- */
-.text_page {
-  width: 100%;
-  height: 100vh;
-  background-color: #e5e5e5;
-}
-.text_page .texts {
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  color: rgba(39, 142, 173, 0.856);
-  font-family: "Vollkorn", serif;
-}
-.text_page .texts h1 {
-  font-size: 70px;
-  padding-top: 10px;
-}
-.text_page .contents {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.text_page .contents .box {
-  width: 80%;
-  height: 30%;
-  margin: 30px;
-  display: flex;
-  align-items: center;
-  background-color: rgb(216, 212, 212);
-  font-family: "Vollkorn", serif;
-  letter-spacing: 1px;
-}
-.text_page .contents .box .title h1 {
-  font-size: 70px;
-  padding-left: 20px;
-  color: rgba(39, 142, 173, 0.856);
-}
-.text_page .contents .box .text p {
-  font-size: 20px;
-  padding-left: 25px;
-}
-/* ---------------------------------------- VR BAD -------------------------------- */
-.vr_bad {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-.vr_bad .left {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-}
-.vr_bad .left .box {
-  width: 73%;
-  height: 100vh;
-}
-.vr_bad .left .box .top {
-  width: 100%;
-  height: 60%;
-  font-family: "Vollkorn", serif;
-}
-.vr_bad .left .box .top .lamp img {
-  width: 70px;
-  height: 60px;
-  border-radius: 50%;
-  padding-top: 50px;
-}
-.vr_bad .left .box .top .title p {
-  width: 350px;
-  font-size: 30px;
-  letter-spacing: 2px;
-}
-.vr_bad .left .box .top .text p {
-  width: 450px;
-  font-size: 17px;
-  padding-top: 40px;
-}
-.vr_bad .left .box .bottom {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  font-family: "Vollkorn", serif;
-}
-.vr_bad .left .box .bottom .title h1 {
-  width: 450px;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.vr_bad .left .box .bottom .btn {
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-}
-.vr_bad .left .box .bottom .btn button {
-  width: 140px;
-  height: 50px;
-  background-color: white;
-  border: 2px solid rgba(39, 142, 173, 0.856);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.vr_bad .left .box .bottom .btn button:hover {
-  border: 2px solid rgb(128, 128, 128);
-}
-.vr_bad .right {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vr_bad .right img {
-  width: 80%;
-  height: 100vh;
-}
-
-/* -------------------------------------------------------BENEFITS----------------------------- */
-.benefits {
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://img.freepik.com/free-photo/beautiful-woman-vr-glasses-80s-sport-suit-white-background_87910-14608.jpg?size=626&ext=jpg&ga=GA1.2.2100098519.1640908800");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  display: flex;
-  align-items: center;
-}
-.benefits .bigbox {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.benefits .bigbox .box {
-  width: 75%;
-  height: 65%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.benefits .bigbox .box .title {
-  width: 90%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-}
-.benefits .bigbox .box .title h1 {
-  font-size: 20px;
-  color: rgba(39, 142, 173, 0.856);
-}
-.benefits .bigbox .box .text {
-  width: 90%;
-  height: 35%;
-  font-size: 65px;
-  color: rgba(39, 142, 173, 0.856);
-}
-.benefits .bigbox .box .btn {
-  width: 90%;
-  height: 35%;
-  display: flex;
-  align-items: center;
-}
-.benefits .bigbox .box .btn button {
-  width: 140px;
-  height: 50px;
-  border: 2px solid rgba(39, 142, 173, 0.856);
-  cursor: pointer;
-  background-color: white;
-}
-.benefits .bigbox .box .btn button:hover {
-  border: 2px solid rgb(128, 128, 128);
-}
-
-/* ---------------------------------------CHAT PAGE -------------------------------- */
-.chat_page {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-.chat_page .left {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.chat_page .left .box {
-  width: 70%;
-  height: 80%;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  letter-spacing: 2px;
-}
-.chat_page .left .box .title {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  color: rgba(39, 142, 173, 0.856);
-}
-.chat_page .left .box .text {
-  width: 100%;
-  height: 60%;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-}
-.chat_page .left .box .chat {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-}
-.chat_page .left .box .chat i {
-  font-size: 30px;
-  color: rgba(39, 142, 173, 0.856);
-}
-.chat_page .left .box .chat h1 {
-  font-size: 20px;
-  cursor: pointer;
-  color: rgba(39, 142, 173, 0.856);
-}
-
-.chat_page .right {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-.chat_page .right .box {
-  width: 70%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 2px;
-}
-.chat_page .right .box .text {
-  width: 100%;
-  height: 55%;
-  display: flex;
-  align-items: center;
-  font-size: 57px;
-  color: rgba(39, 142, 173, 0.856);
-}
-.chat_page .right .box .text2 {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-}
-/* ------------------------------------------------FOLLOW------------------------------------ */
-.follow {
-  width: 100%;
-  height: 100vh;
-  background-color: green;
-}
-.follow .top {
-  width: 100%;
-  height: 50%;
-  background-color: rgba(39, 142, 173, 0.856);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.follow .top .line {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.follow .top .line .title {
-  width: 50%;
-  height: 30%;
-  font-size: 40px;
-  color: white;
-}
-.follow .top .line .icons {
-  width: 40%;
-  height: 40%;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
-}
-
-.follow .top .line .icons .fa-facebook {
-  color: white;
-}
-.follow .top .line .icons .fa-youtube {
-  color: white;
-}
-.follow .top .line .icons .fa-instagram {
-  color: white;
-}
-.follow .top .line .icons .fa-linkedin {
-  color: white;
-}
-.follow .top .line .icons .fa-github {
-  color: white;
-}
-.follow .bottom {
-  width: 100%;
-  height: 50%;
-  background-color: rgb(32, 30, 30);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.follow .bottom .title {
-  font-size: 20px;
-  width: 600px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-@media screen and (max-width: 700px) {
-  /* -------------------------HOME PAGE------------------ */
+  .logo {
+    width: 90;
+    height: var(--navbar-height);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px rgb(142, 157, 165);
+    padding-left: 60px;
+  }
+  .logo p {
+    font-family: "Russo One", sans-serif;
+    font-size: 26px;
+    color: rgb(155, 152, 152);
+  }
+  /*--------------------------- HOME-PAGE ---------------------------*/
   .home_page {
     width: 100%;
-    height: 135vh;
+    height: calc(100vh - var(--navbar-height));
+    /* background-color: rgb(255, 255, 255); */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
   }
   .home_page .left {
-    width: 100%;
-    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_page .left .box {
+    width: 80%;
+    height: 80%;
+  }
+  .home_page .left .box .title {
+    color: rgba(39, 142, 173, 0.856);
+    height: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    font-family: "Vollkorn", serif;
+    letter-spacing: 2px;
   }
+  .home_page .left .box .text {
+    color: rgba(73, 77, 82, 0.753);
+    height: 60%;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    font-family: "Vollkorn", serif;
+  }
+  .home_page .left .box .btn {
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .home_page .left .box .btn button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Vollkorn", serif;
+    color: white;
+    background-color: rgba(39, 142, 173, 0.856);
+    border: none;
+    border-radius: 5px;
+  }
+  .home_page .left .box .btn button:hover {
+    color: rgba(39, 142, 173, 0.856);
+    background-color: white;
+    border: 1px solid rgb(166, 166, 167);
+    transition: 0.3s;
+  }
+
   .home_page .right {
-    width: 80%;
-    height: 50vh;
+    width: 60%;
+    background-image: url("https://i.guim.co.uk/img/media/26560f541846d38e77d5a201ae4a938d8dff0139/0_1381_4480_2686/master/4480.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=9734c5d04efa6972be9f8baf983dbb69");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
   }
-  /* ----------------------------ABOUT PAGE ----------------- */
+
+  /*------------------------- ABOUT-PAGE --------------------------*/
   .about_page {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
+    background-color: rgba(39, 142, 173, 0.856);
+    display: flex;
     flex-direction: column;
   }
   .about_page .texts {
     width: 100%;
     height: 20%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "Vollkorn", serif;
   }
+
   .about_page .texts h1 {
-    font-size: 30px;
+    font-size: 40px;
+    padding-top: 10px;
   }
   .about_page .texts p {
-    font-size: 16px;
-    width: 300px;
-    text-align: center;
+    font-size: 20px;
   }
+
   .about_page .contents {
-    width: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 100px;
+    justify-content: space-around;
   }
   .about_page .contents .box {
-    width: 70%;
-    padding: 20px;
+    width: 30%;
+    height: 80%;
+    font-family: "Vollkorn", serif;
+    letter-spacing: 2px;
   }
-  /*---------------------------- TECHNOLOGY PAGE--------------------------- */
-  .technology_page {
-    width: 100%;
-    height: 200%;
+  .about_page .contents .box .title {
+    background-color: white;
+    font-size: 26px;
+    font-weight: 700;
+    height: 20%;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    color: rgba(39, 142, 173, 0.856);
+  }
+  .about_page .contents .box .text {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    height: 60%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(8, 32, 39, 0.795);
+  }
+  .about_page .contents .box .btn {
+    background-color: white;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_page .contents .box .btn button {
+    width: 100px;
+    height: 40px;
+    border: 2px solid rgba(39, 142, 173, 0.856);
+    cursor: pointer;
+    background-color: white;
+    font-family: "Russo One", sans-serif;
+  }
+  .about_page .contents .box .btn button:hover {
+    border: 2px solid rgb(148, 146, 146);
+    transition: 0.1s;
+  }
+
+  /*---------------------------- TECHNOLOGY PAGE ------------------------*/
+  .technology_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
   }
   .technology_page .left {
-    width: 100%;
+    width: 40%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .technology_page .left img {
-    padding-top: 40px;
+    width: 85%;
+    height: 100vh;
+    opacity: 0.6;
+    display: flex;
   }
   .technology_page .right {
-    width: 100%;
+    width: 60%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     flex-direction: column;
-    padding-top: 30px;
   }
   .technology_page .right .top {
+    width: 95%;
+    height: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+    box-shadow: 0px 1px 0px black;
   }
-  .technology_page .right .top .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .technology_page .right .top .title h1 {
+    color: rgba(39, 142, 173, 0.856);
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: "Vollkorn", serif;
   }
+  .technology_page .right .top .title2 h1 {
+    font-size: 60px;
+    padding-top: 15px;
+    font-family: "Vollkorn", serif;
+  }
+  .technology_page .right .top .text p {
+    font-size: 17px;
+    width: 60%;
+    padding-top: 10px;
+    font-family: "Vollkorn", serif;
+  }
+
   .technology_page .right .bottom {
-    width: 100%;
+    width: 95%;
+    height: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
   }
   .technology_page .right .bottom .lamp {
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    padding-right: 100px;
   }
+  .technology_page .right .bottom .lamp img {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    color: rgb(119, 117, 117);
+  }
+  .technology_page .right .bottom .lamp p {
+    width: 35%;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: "Vollkorn", serif;
+  }
+
   .technology_page .right .bottom .mike {
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-right: 100px;
-    padding-top: 30px;
   }
-  /* ----------------------------------TEXTS PAGE---------------------------- */
+  .technology_page .right .bottom .mike img {
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .technology_page .right .bottom .mike p {
+    width: 35%;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: "Vollkorn", serif;
+  }
+  /* ------------------------------------------- TEXTS PAGE ---------------------------------- */
   .text_page {
     width: 100%;
-    height: 200%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 100vh;
+    background-color: #e5e5e5;
+  }
+  .text_page .texts {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: rgba(39, 142, 173, 0.856);
+    font-family: "Vollkorn", serif;
   }
   .text_page .texts h1 {
-    font-size: 40px;
+    font-size: 70px;
+    padding-top: 10px;
   }
-  .text_page .contents .box .text p {
-    font-size: 14px;
-  }
-  /* -------------------------------------VR BAD---------------------------- */
-  .vr_bad {
+  .text_page .contents {
     width: 100%;
-    height: 250%;
+    height: 80%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
-  .vr_bad .left {
-    width: 100%;
+  .text_page .contents .box {
+    width: 80%;
+    height: 30%;
+    margin: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: rgb(216, 212, 212);
+    font-family: "Vollkorn", serif;
+    letter-spacing: 1px;
+  }
+  .text_page .contents .box .title h1 {
+    font-size: 70px;
+    padding-left: 20px;
+    color: rgba(39, 142, 173, 0.856);
+  }
+  .text_page .contents .box .text p {
+    font-size: 20px;
+    padding-left: 25px;
+  }
+  /* ---------------------------------------- VR BAD -------------------------------- */
+  .vr_bad {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .vr_bad .left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .vr_bad .left .box {
+    width: 73%;
+    height: 100vh;
   }
   .vr_bad .left .box .top {
     width: 100%;
+    height: 60%;
+    font-family: "Vollkorn", serif;
+  }
+  .vr_bad .left .box .top .lamp img {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 50px;
+  }
+  .vr_bad .left .box .top .title p {
+    width: 350px;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .vr_bad .left .box .top .text p {
+    width: 450px;
+    font-size: 17px;
+    padding-top: 40px;
   }
   .vr_bad .left .box .bottom {
     width: 100%;
-    padding-top: 50px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Vollkorn", serif;
+  }
+  .vr_bad .left .box .bottom .title h1 {
+    width: 450px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .vr_bad .left .box .bottom .btn {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+  .vr_bad .left .box .bottom .btn button {
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgba(39, 142, 173, 0.856);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .vr_bad .left .box .bottom .btn button:hover {
+    border: 2px solid rgb(128, 128, 128);
   }
   .vr_bad .right {
-    width: 100%;
+    width: 50%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .vr_bad .right img {
-    width: 60%;
-    height: 90%;
-    padding-top: 20px;
+    width: 80%;
+    height: 100vh;
   }
-  /* -----------------------------BENEFITS PAGE---------------------- */
+
+  /* -------------------------------------------------------BENEFITS----------------------------- */
   .benefits {
     width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/beautiful-woman-vr-glasses-80s-sport-suit-white-background_87910-14608.jpg?size=626&ext=jpg&ga=GA1.2.2100098519.1640908800");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
   .benefits .bigbox {
-    width: 80%;
-    height: 100%;
+    width: 50%;
+    height: 100vh;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
   }
   .benefits .bigbox .box {
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .benefits .bigbox .box .title {
+    width: 90%;
+    height: 30%;
     display: flex;
     align-items: center;
   }
   .benefits .bigbox .box .title h1 {
     font-size: 20px;
+    color: rgba(39, 142, 173, 0.856);
   }
   .benefits .bigbox .box .text {
-    font-size: 50px;
+    width: 90%;
+    height: 35%;
+    font-size: 65px;
+    color: rgba(39, 142, 173, 0.856);
   }
-  /* ----------------------------------------CHAT PAGE---------------------------- */
+  .benefits .bigbox .box .btn {
+    width: 90%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+  }
+  .benefits .bigbox .box .btn button {
+    width: 140px;
+    height: 50px;
+    border: 2px solid rgba(39, 142, 173, 0.856);
+    cursor: pointer;
+    background-color: white;
+  }
+  .benefits .bigbox .box .btn button:hover {
+    border: 2px solid rgb(128, 128, 128);
+  }
+
+  /* ---------------------------------------CHAT PAGE -------------------------------- */
   .chat_page {
     width: 100%;
-    height: 90%;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
   .chat_page .left {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .chat_page .right {
-    width: 100%;
-  }
-  .chat_page .right .box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 500px;
-  }
-  .chat_page .right .box .text {
-    width: 70%;
-    font-size: 30px;
-  }
-  .chat_page .right .box .text2 h1 {
-    font-size: 18px;
-    padding-left: 100px;
-    padding-bottom: 90px;
-  }
-  /* ----------------------------------------------FOLLOW-------------------------------- */
-  .follow {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
-  .follow .top {
+  .chat_page .left .box {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    letter-spacing: 2px;
+  }
+  .chat_page .left .box .title {
     width: 100%;
-    height: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    color: rgba(39, 142, 173, 0.856);
   }
-  .follow .top .line {
+  .chat_page .left .box .text {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .follow .top .line .title {
+    height: 60%;
     font-size: 20px;
     display: flex;
     align-items: center;
+  }
+  .chat_page .left .box .chat {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .chat_page .left .box .chat i {
+    font-size: 30px;
+    color: rgba(39, 142, 173, 0.856);
+  }
+  .chat_page .left .box .chat h1 {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(39, 142, 173, 0.856);
+  }
+
+  .chat_page .right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .chat_page .right .box {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+  }
+  .chat_page .right .box .text {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    font-size: 57px;
+    color: rgba(39, 142, 173, 0.856);
+  }
+  .chat_page .right .box .text2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+  /* ------------------------------------------------FOLLOW------------------------------------ */
+  .follow {
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+  }
+  .follow .top {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(39, 142, 173, 0.856);
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
-  .follow .top .line .icons {
-    font-size: 25px;
-  }
-  .follow .bottom {
-    width: 100%;
+  .follow .top .line {
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .follow .bottom .title {
-    font-size: 15px;
+  .follow .top .line .title {
+    width: 50%;
+    height: 30%;
+    font-size: 40px;
+    color: white;
+  }
+  .follow .top .line .icons {
+    width: 40%;
+    height: 40%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+  }
+
+  .follow .top .line .icons .fa-facebook {
+    color: white;
+  }
+  .follow .top .line .icons .fa-youtube {
+    color: white;
+  }
+  .follow .top .line .icons .fa-instagram {
+    color: white;
+  }
+  .follow .top .line .icons .fa-linkedin {
+    color: white;
+  }
+  .follow .top .line .icons .fa-github {
+    color: white;
+  }
+  .follow .bottom {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(32, 30, 30);
     display: flex;
     align-items: center;
     justify-content: center;
   }
-}
+  .follow .bottom .title {
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 700px) {
+    /* -------------------------HOME PAGE------------------ */
+    .home_page {
+      width: 100%;
+      height: 135vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .home_page .left {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .home_page .right {
+      width: 80%;
+      height: 50vh;
+    }
+    /* ----------------------------ABOUT PAGE ----------------- */
+    .about_page {
+      width: 100%;
+      height: 200vh;
+      flex-direction: column;
+    }
+    .about_page .texts {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .about_page .texts h1 {
+      font-size: 30px;
+    }
+    .about_page .texts p {
+      font-size: 16px;
+      width: 300px;
+      text-align: center;
+    }
+    .about_page .contents {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 100px;
+    }
+    .about_page .contents .box {
+      width: 70%;
+      padding: 20px;
+    }
+    /*---------------------------- TECHNOLOGY PAGE--------------------------- */
+    .technology_page {
+      width: 100%;
+      height: 200%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .technology_page .left {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .technology_page .left img {
+      padding-top: 40px;
+    }
+    .technology_page .right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 30px;
+    }
+    .technology_page .right .top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .technology_page .right .top .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .technology_page .right .bottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .technology_page .right .bottom .lamp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 30px;
+      padding-right: 100px;
+    }
+    .technology_page .right .bottom .mike {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 100px;
+      padding-top: 30px;
+    }
+    /* ----------------------------------TEXTS PAGE---------------------------- */
+    .text_page {
+      width: 100%;
+      height: 200%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .text_page .texts h1 {
+      font-size: 40px;
+    }
+    .text_page .contents .box .text p {
+      font-size: 14px;
+    }
+    /* -------------------------------------VR BAD---------------------------- */
+    .vr_bad {
+      width: 100%;
+      height: 250%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .vr_bad .left {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vr_bad .left .box .top {
+      width: 100%;
+    }
+    .vr_bad .left .box .bottom {
+      width: 100%;
+      padding-top: 50px;
+    }
+    .vr_bad .right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vr_bad .right img {
+      width: 60%;
+      height: 90%;
+      padding-top: 20px;
+    }
+    /* -----------------------------BENEFITS PAGE---------------------- */
+    .benefits {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .benefits .bigbox {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .benefits .bigbox .box {
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+    }
+    .benefits .bigbox .box .title h1 {
+      font-size: 20px;
+    }
+    .benefits .bigbox .box .text {
+      font-size: 50px;
+    }
+    /* ----------------------------------------CHAT PAGE---------------------------- */
+    .chat_page {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .chat_page .left {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .chat_page .right {
+      width: 100%;
+    }
+    .chat_page .right .box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 500px;
+    }
+    .chat_page .right .box .text {
+      width: 70%;
+      font-size: 30px;
+    }
+    .chat_page .right .box .text2 h1 {
+      font-size: 18px;
+      padding-left: 100px;
+      padding-bottom: 90px;
+    }
+    /* ----------------------------------------------FOLLOW-------------------------------- */
+    .follow {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .follow .top {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .follow .top .line {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .follow .top .line .title {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .follow .top .line .icons {
+      font-size: 25px;
+    }
+    .follow .bottom {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .follow .bottom .title {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
